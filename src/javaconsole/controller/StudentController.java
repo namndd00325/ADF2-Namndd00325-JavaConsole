@@ -51,7 +51,7 @@ public class StudentController {
         int index;
         do {
             index = scanerIndex.nextInt();
-            if (index <= studentModel.GetSizeOfList()) {
+            if (index <= studentModel.getSizeOfList()) {
                 checkIndex = false;
             } else {
                 System.err.println("Index false. Please input index again: ");
@@ -85,7 +85,7 @@ public class StudentController {
         int index;
         do {
             index = scanerIndex.nextInt();
-            if (index <= studentModel.GetSizeOfList()) {
+            if (index <= studentModel.getSizeOfList()) {
                 checkIndex = false;
             } else {
                 System.err.println("Index false. Please input index again: ");

@@ -23,13 +23,13 @@ public class StudentModel {
         }
         int count = 1;
         for (Student x : listStudent) {
-            System.out.println("Index: " + count + " Name: " + x.getName() + " Email: " + x.getEmail());
+            System.out.println(" ID: " + count +"\n"+ " Name: " + x.getName() +"\n"+ " Email: " + x.getEmail());
             count++;
         }
 
     }
 
-    public int GetSizeOfList() {
+    public int getSizeOfList() {
         return listStudent.size();
     }
 

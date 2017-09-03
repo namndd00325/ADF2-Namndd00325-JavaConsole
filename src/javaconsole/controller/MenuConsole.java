@@ -34,7 +34,7 @@ public class MenuConsole {
             int choice = 0;
             try {
                 choice = Integer.parseInt(strchoice); // Ép kiểu.
-                System.out.println("Choice: " + choice);
+               
             } catch (Exception e) {
                 // Cần có phần lưu log lỗi ở đây
                 System.err.println("Please enter a number: ");
@@ -47,6 +47,7 @@ public class MenuConsole {
             } else {
                 switch (choice) {
                     case 1: // Do something.
+                        System.out.println("1. Student List");
                         studentController.getList();
                         break;
                     case 2: // Do somthing.
@@ -55,9 +56,11 @@ public class MenuConsole {
 
                         break;
                     case 3: // Do something.
+                        System.out.println("3. Edit Student");
                         studentController.editStudent();
                         break;
                     case 4: // Do something.
+                        System.out.println("4. Delete Student");
                         studentController.deleteStudent();
                         break;
                     default: // Do something.
