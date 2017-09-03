@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package javaconsole.model;
+
+import java.util.ArrayList;
 import javaconsole.enity.Student;
 
 /**
@@ -11,17 +13,41 @@ import javaconsole.enity.Student;
  * @author Nam Nguyen
  */
 public class StudentModel {
-    public void getList(Student student){
-    
+
+    private static ArrayList<Student> listStudent;
+
+    public void getList() {
+        if (listStudent == null) {
+            System.out.println("List is empty !");
+            return;
+        }
+        int count = 1;
+        for (Student x : listStudent) {
+            System.out.println("Index: " + count + " Name: " + x.getName() + " Email: " + x.getEmail());
+            count++;
+        }
+
     }
-    public void insert(){
-    
+
+    public int GetSizeOfList() {
+        return listStudent.size();
     }
-    public void update(){
-    
+
+    public void insert(Student student) {
+        if (listStudent == null) {
+            listStudent = new ArrayList<Student>();
+        }
+        listStudent.add(student);
     }
-    public void delete(){
-    
+
+    public void update(Student student, int index) {
+        index--;
+        listStudent.set(index, student);
     }
-    
+
+    public void delete(int index) {
+        index--;
+        listStudent.remove(index);
+    }
+
 }

@@ -41,22 +41,24 @@ public class MenuConsole {
                 continue;
 
             }
-
+            StudentController studentController = new StudentController();
             if (choice == 5) {
                 break;
             } else {
                 switch (choice) {
                     case 1: // Do something.
-                        System.out.println("1. Student list");
+                        studentController.getList();
                         break;
                     case 2: // Do somthing.
                         System.out.println("2. Add student");
+                        studentController.addStudent();
+
                         break;
                     case 3: // Do something.
-                        System.out.println("3. Edit student");
+                        studentController.editStudent();
                         break;
                     case 4: // Do something.
-                        System.out.println("4. Delete student");
+                        studentController.deleteStudent();
                         break;
                     default: // Do something.
 

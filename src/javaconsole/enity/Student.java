@@ -13,14 +13,34 @@ public class Student {
 
     private long id;
     private String name;
-    private String birthday;
-    private String phone;
-    private String email;
-    private String rollnumber;
-    private String className;
-    
-  
 
-  
-  
+    private String email;
+
+    public Student() {
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }
