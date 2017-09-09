@@ -35,7 +35,7 @@ public class StudentController {
         Student student = new Student();
         student.setName(name);
         student.setEmail(email);
-        student.setId(System.currentTimeMillis());
+        //student.setId(System.currentTimeMillis());
 
         // Lưu thông tin vào database
         studentModel.insert(student);
@@ -69,7 +69,7 @@ public class StudentController {
         Student student = new Student();
         student.setName(name);
         student.setEmail(email);
-        student.setId(System.currentTimeMillis());
+        //student.setId(System.currentTimeMillis());
 
         // Update thông tin vào database
         studentModel.update(student, index);

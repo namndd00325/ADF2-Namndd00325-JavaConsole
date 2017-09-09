@@ -11,19 +11,21 @@ package javaconsole.enity;
  */
 public class Student {
 
-    private long id;
+    private int id;
     private String name;
-
     private String email;
+    private String rollNumber;
+    private String className;
+    private int status;
 
     public Student() {
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -41,6 +43,30 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getRollNumber() {
+        return rollNumber;
+    }
+
+    public void setRollNumber(String rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
 }
